@@ -1,0 +1,7 @@
+ClawLint is an independent fork of ESLint v9.x maintained by Lateos.
+This project is not affiliated with, endorsed by, or sponsored by the 
+ESLint project, the OpenJS Foundation, or any other entity.
+
+ESLint is copyright OpenJS Foundation and other contributors.
+Licensed under the MIT License.
+ClawLint modifications are also licensed under the MIT License.
