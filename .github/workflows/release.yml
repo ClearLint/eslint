@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm test
+      - run: npm publish --provenance
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: "ClearLint v9 LTS release"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
