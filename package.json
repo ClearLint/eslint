@@ -1,6 +1,6 @@
 {
   "name": "@clearlint/eslint",
-  "version": "9.39.4-lts.1",
+  "version": "9.39.4-lts.2",
   "author": "Roongrunchai Chongolnee <leo@nlateos.ai>",
   "description": "ESLint v9 long-term support fork. Security patches, AI guardrails, and audit-assisting JSON reports for compliance documentation.",
   "type": "commonjs",
