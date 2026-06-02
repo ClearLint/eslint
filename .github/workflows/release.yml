@@ -15,11 +15,3 @@ jobs:
       - run: npm publish --tag lts --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Create GitHub Release
-        uses: actions/create-release@v1
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body: "ClearLint v9 LTS release"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
