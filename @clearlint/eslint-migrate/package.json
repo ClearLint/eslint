@@ -1,0 +1,35 @@
+{
+  "name": "@clearlint/eslint-migrate",
+  "version": "1.0.1",
+  "description": "CLI tool to analyze and migrate ESLint v9 configs to v10",
+  "type": "commonjs",
+  "main": "lib/discover.js",
+  "bin": {
+    "eslint-migrate": "bin/eslint-migrate.js"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node tests/migrate.test.js"
+  },
+  "keywords": [
+    "eslint",
+    "migration",
+    "v10",
+    "v9",
+    "flat-config",
+    "eslintrc"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clearlint/eslint.git",
+    "directory": "@clearlint/eslint-migrate"
+  },
+  "homepage": "https://github.com/clearlint/eslint",
+  "bugs": "https://github.com/clearlint/eslint/issues"
+}

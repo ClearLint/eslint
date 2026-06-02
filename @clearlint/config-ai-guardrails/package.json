@@ -1,0 +1,39 @@
+{
+  "name": "@clearlint/config-ai-guardrails",
+  "version": "1.0.0",
+  "description": "AI-safe linting config — catch common mistakes AI coding agents make",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "rules/",
+    "lib/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node tests/rules.test.js"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.0.0 <10.0.0"
+  },
+  "optionalDependencies": {
+    "eslint-plugin-security": "^3.0.0"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "ai",
+    "guardrails",
+    "security",
+    "lint"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clearlint/eslint.git",
+    "directory": "@clearlint/config-ai-guardrails"
+  },
+  "homepage": "https://github.com/clearlint/eslint",
+  "bugs": "https://github.com/clearlint/eslint/issues"
+}
