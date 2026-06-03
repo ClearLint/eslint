@@ -222,6 +222,12 @@
     "ecmascript",
     "espree"
   ],
+  "maintainers": [
+    {
+      "name": "Leo Chong",
+      "email": "leo@nlateos.ai"
+    }
+  ],
   "license": "MIT",
   "engines": {
     "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
