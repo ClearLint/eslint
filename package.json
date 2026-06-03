@@ -1,6 +1,6 @@
 {
   "name": "@clearlint/eslint",
-  "version": "9.39.4-lts.4",
+  "version": "9.39.4-lts.5",
   "author": "Roongrunchai Chongolnee <leo@nlateos.ai>",
   "description": "ESLint v9 long-term support fork. Security patches, AI guardrails, and audit-assisting JSON reports for compliance documentation.",
   "type": "commonjs",
@@ -105,9 +105,9 @@
     "type": "git",
     "url": "git+https://github.com/clearlint/eslint.git"
   },
-  "funding": "https://eslint.org/donate",
-  "homepage": "https://eslint.org",
-  "bugs": "https://github.com/eslint/eslint/issues/",
+  "funding": "https://github.com/clearlint/eslint",
+  "homepage": "https://github.com/clearlint/eslint",
+  "bugs": "https://github.com/clearlint/eslint/issues",
   "dependencies": {
     "@eslint-community/eslint-utils": "^4.8.0",
     "@eslint-community/regexpp": "^4.12.1",
