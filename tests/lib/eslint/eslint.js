@@ -1991,7 +1991,7 @@ describe("ESLint", () => {
 
 						const overrideConfigFile = "eslint.config.ts";
 
-						it("should load a TS config file when --experimental-strip-types is enabled", async () => {
+						(process.execArgv.includes("--experimental-strip-types") ? it : it.skip)("should load a TS config file when --experimental-strip-types is enabled", async () => {
 							const configFileContent = `import type { FlatConfig } from "./helper.ts";\nexport default ${JSON.stringify(
 								[{ rules: { "no-undef": 2 } }],
 								null,
@@ -8327,7 +8327,7 @@ describe("ESLint", () => {
 							sinon.stub(ConfigLoader, "loadJiti").rejects();
 						});
 
-						describe("should load a TS config file when --experimental-strip-types is enabled", () => {
+						(process.execArgv.includes("--experimental-strip-types") ? describe : describe.skip)("should load a TS config file when --experimental-strip-types is enabled", () => {
 							it('with "type": "commonjs" in `package.json` and CJS syntax', async () => {
 								const cwd = getFixturePath(
 									"ts-config-files",
